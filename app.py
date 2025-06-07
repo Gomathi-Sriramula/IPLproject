@@ -1,3 +1,14 @@
+
+
+import os
+
+file_path = 'pipe.pkl'
+
+print(f"Current working directory: {os.getcwd()}")
+print(f"Does '{file_path}' exist? {os.path.exists(file_path)}")
+if os.path.exists(file_path):
+    print(f"Size of '{file_path}': {os.path.getsize(file_path)} bytes")
+
 import streamlit as st
 import pickle
 import sklearn
